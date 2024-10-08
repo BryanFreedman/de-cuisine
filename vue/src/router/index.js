@@ -61,7 +61,7 @@ const routes = [
     name: "recipe-form",
     component: RecipeFormView,
     meta: {
-      requiresAuth: true, //Set to true when authentication is implemented
+      requiresAuth: false, //Set to true when authentication is implemented
     },
   },
   {
@@ -70,7 +70,7 @@ const routes = [
     // standardize naming conventions
     component: RecipeListView,
     meta: {
-      requiresAuth: true, //Set to true when authentication is implemented
+      requiresAuth: false, //Set to true when authentication is implemented
     },
   },
   {
@@ -78,7 +78,7 @@ const routes = [
     name: "RecipeDetailsView",
     component: RecipeDetailsView,
     meta: {
-      requiresAuth: true, //Set to true when authentication is implemented
+      requiresAuth: false, //Set to true when authentication is implemented
     },
   },
 
@@ -87,7 +87,7 @@ const routes = [
     name: "recipe-edit",
     component: RecipeFormView,
     meta: {
-      requiresAuth: true,
+      requiresAuth: false,
     },
   },
   {
@@ -95,7 +95,7 @@ const routes = [
     name: "mealplan-form",
     component: MealPlanFormView,
     meta: {
-      requiresAuth: true,
+      requiresAuth: false,
     },
   },
   {
@@ -103,7 +103,7 @@ const routes = [
     name: "mealplan-details",
     component: MealplanDetailsView,
     meta: {
-      requiresAuth: true,
+      requiresAuth: false,
     },
   },
   {
@@ -111,7 +111,7 @@ const routes = [
     name: "mealplan-edit",
     component: MealPlanFormView,
     meta: {
-      requiresAuth: true,
+      requiresAuth: false,
     },
   },
   {
@@ -119,7 +119,7 @@ const routes = [
     name: "mealplan-scheduler",
     component: MealplanSchedulerView,
     meta: {
-      requiresAuth: true,
+      requiresAuth: false,
     },
   },
   {
@@ -127,7 +127,7 @@ const routes = [
     name: "grocery-list",
     component: () => import("../views/GroceryListView.vue"),
     meta: {
-      requiresAuth: true,
+      requiresAuth: false,
     },
   },
   {
@@ -135,7 +135,7 @@ const routes = [
     name: "grocery-list-edit",
     component: () => import("../views/GroceryListEditView.vue"),
     meta: {
-      requiresAuth: true,
+      requiresAuth: false,
     },
   },
 ];
